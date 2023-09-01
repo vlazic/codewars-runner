@@ -1,7 +1,7 @@
 {
-  "name": "tmp.juypo0uu0c",
+  "name": "codewars-runner",
   "version": "1.0.0",
-  "description": "",
+  "description": "Automatically generates test cases for CodeWars katas",
   "main": "index.js",
   "scripts": {
     "test:create": "node new.js",
@@ -9,7 +9,12 @@
     "test": "npm-run-all \"test:create -- {1}\" test:watch --",
     "context": "gpt-project-context -i '**/*.js,README.md,package.json' -e '**/node_modules/**,**/dist/**'"
   },
-  "keywords": [],
+  "keywords": [
+    "codewars",
+    "kata",
+    "test",
+    "generator"
+  ],
   "author": "Vladimir Lazić <contact@vlazic.com> (https://vlazic.com/)",
   "license": "MIT",
   "dependencies": {
@@ -21,5 +26,13 @@
     "jest": "27.3.1",
     "npm-run-all": "4.1.5",
     "playwright": "1.16.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vlazic/codewars-runner.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vlazic/codewars-runner/issues"
+  },
+  "homepage": "https://github.com/vlazic/codewars-runner#readme"
 }

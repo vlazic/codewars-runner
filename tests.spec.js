@@ -1,15 +1,20 @@
-const sum = require('./work');
+const anagramDifference = require('./work');
 const Test = require("@codewars/test-compat");
 
-describe("Tests", () => {
-  it("test", () => {
-Test.assertEquals(sum(1), 1);
-Test.assertEquals(sum(2), 2);
-Test.assertEquals(sum(3), 3);
-Test.assertEquals(sum(4), 5);
+const { assert } = require('chai');
 
-Test.assertEquals(sum(5), 7);
-
-Test.assertEquals(sum(10), 42);
-  });
+describe("Sample tests", () => {
+  const testCases = [
+  // w1     w2   expected
+    ["",    "",    0],
+    ["a",   "",    1],
+    ["",    "a",   1],
+    ["ab",  "a",   1],
+    ["ab",  "cd",  4],
+    ["aab", "a",   2],
+    ["a",   "aab", 2],
+    ["codewars", "hackerrank", 10]
+  ];
+  for(const [w1, w2, expected] of testCases)
+    it(`w1 = "${w1}", w2 = "${w2}"`, () => assert.strictEqual(anagramDifference(w1, w2), expected));
 });

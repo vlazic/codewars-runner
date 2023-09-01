@@ -1,3 +1,3 @@
-module.exports = function sum(num) {
-  return 0;
+module.exports = function anagramDifference(w1,w2){
+   //..
 }
