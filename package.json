@@ -18,7 +18,7 @@
   "author": "Vladimir Lazić <contact@vlazic.com> (https://vlazic.com/)",
   "license": "MIT",
   "dependencies": {
-    "axios": "0.24.0"
+    "axios": "^1.12.0"
   },
   "devDependencies": {
     "@codewars/test-compat": "1.1.0",
