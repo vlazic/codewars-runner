@@ -23,3 +23,6 @@ If transitive deps can't be fixed by audit, add `"overrides"` in `package.json`:
 }
 ```
 Then run `npm install` to apply.
+
+### Accepted risks
+- `@tootallnate/once` 1.1.2 (Low severity, CVE-2026-3449) — transitive via jest v27 -> jsdom 16 -> http-proxy-agent v4. Fix version 3.0.1 is a breaking major bump incompatible with http-proxy-agent v4. Proper fix requires upgrading jest from v27 to v29. Dev-only dependency.
