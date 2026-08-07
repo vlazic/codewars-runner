@@ -20,6 +20,9 @@
   "dependencies": {
     "axios": "1.19.0"
   },
+  "overrides": {
+    "shell-quote": "^1.9.0"
+  },
   "devDependencies": {
     "@codewars/test-compat": "1.1.0",
     "concurrently": "6.3.0",
